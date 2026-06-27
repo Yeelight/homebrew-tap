@@ -5,21 +5,21 @@
 class YeelightHome < Formula
   desc "Local Yeelight Home Runtime CLI."
   homepage "https://github.com/Yeelight/yeelight-home"
-  version "0.1.10"
+  version "0.1.11"
   license "Proprietary"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Yeelight/yeelight-home/releases/download/v0.1.10/yeelight-home-darwin-amd64.tar.gz"
-      sha256 "bbe4d490da741aa19591bdc97650cd280040c81a6fb41a1c479041b93aaa5c38"
+      url "https://github.com/Yeelight/yeelight-home/releases/download/v0.1.11/yeelight-home-darwin-amd64.tar.gz"
+      sha256 "5599aa1f8e9d2f1cb42f034369c83e8d716c8469d3a54a269c931dc7044fb9a8"
 
       define_method(:install) do
         bin.install "yeelight-home"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Yeelight/yeelight-home/releases/download/v0.1.10/yeelight-home-darwin-arm64.tar.gz"
-      sha256 "6c9f5c2520928413cb036ebd5e90c32bf60bb083e9ee73b0cbd2b8da0ea049ff"
+      url "https://github.com/Yeelight/yeelight-home/releases/download/v0.1.11/yeelight-home-darwin-arm64.tar.gz"
+      sha256 "360e8ed0a6dbdb098245be9abc13ab872c14b23c165fbd196c6d41b72b7943db"
 
       define_method(:install) do
         bin.install "yeelight-home"
@@ -29,15 +29,15 @@ class YeelightHome < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Yeelight/yeelight-home/releases/download/v0.1.10/yeelight-home-linux-amd64.tar.gz"
-      sha256 "779d8bd2e398be3d3ba266f9ee038aaab04742cb5c90c28be8d87117453198ab"
+      url "https://github.com/Yeelight/yeelight-home/releases/download/v0.1.11/yeelight-home-linux-amd64.tar.gz"
+      sha256 "3fc30c676ca2bea9cce6273498f25f46201fddbd275492d78bdc7dd6e2b67c93"
       define_method(:install) do
         bin.install "yeelight-home"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Yeelight/yeelight-home/releases/download/v0.1.10/yeelight-home-linux-arm64.tar.gz"
-      sha256 "05eb00590916c1124c47a7caaee7d1231d347188be88ae55077bf52f4bf5975c"
+      url "https://github.com/Yeelight/yeelight-home/releases/download/v0.1.11/yeelight-home-linux-arm64.tar.gz"
+      sha256 "5e989c8bbd334dff6c99f3bc0847ebdf1e5316cdda773d2423494e838aa8e297"
       define_method(:install) do
         bin.install "yeelight-home"
       end
